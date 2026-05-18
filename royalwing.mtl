@@ -1,0 +1,304 @@
+newmtl Railcover11Mtl
+Material Color
+Ka 0.373615 0.368591 0.383775
+Kd 0.373615 0.368591 0.383775
+Ks 0.0322335 0.0318 0.03311 
+
+d 1
+
+Ns 255
+
+map_Ka Railcover11_diff.png
+map_Kd Railcover11_diff.png
+map_d Railcover11_diff.png
+
+map_Bump Railcover11_nmap.png
+
+map_Ns Railcover11_spec.png
+
+rbx_doublesided 1
+
+rbx_alphamode overlay
+
+newmtl Lens1Mtl
+Material Color
+Ka 0.21952 0.505432 0.715465
+Kd 0.21952 0.505432 0.715465
+Ks 0.086947 0.200191 0.28338 
+
+d 0.2
+
+Ns 0
+
+map_Ka Lens1_diff.png
+map_Kd Lens1_diff.png
+map_d Lens1_diff.png
+
+map_Bump Lens1_nmap.png
+
+newmtl View1Mtl
+Material Color
+Ka 0 0 0
+Kd 0 0 0
+Ks 0 0 0 
+
+d 1
+
+Ns 0
+
+newmtl Rearironmain1Mtl
+Material Color
+Ka 0.373615 0.368591 0.383775
+Kd 0.373615 0.368591 0.383775
+Ks 0.0322335 0.0318 0.03311 
+
+d 1
+
+Ns 255
+
+map_Ka Rearironmain1_diff.png
+map_Kd Rearironmain1_diff.png
+map_d Rearironmain1_diff.png
+
+map_Bump Rearironmain1_nmap.png
+
+map_Ns Rearironmain1_spec.png
+
+rbx_doublesided 1
+
+rbx_alphamode overlay
+
+newmtl Translucent1Mtl
+Material Color
+Ka 0.373615 0.368591 0.383775
+Kd 0.373615 0.368591 0.383775
+Ks 0.0322335 0.0318 0.03311 
+
+d 0.4
+
+Ns 255
+
+map_Ka Base1_diff.png
+map_Kd Base1_diff.png
+map_d Base1_diff.png
+
+map_Bump Base1_nmap.png
+
+map_Ns Base1_spec.png
+
+rbx_alphamode overlay
+
+newmtl TheRiflemanOfBennington1Mtl
+Material Color
+Ka 0.940601 0.940601 0.940601
+Kd 0.940601 0.940601 0.940601
+Ks 0.0590181 0.0590181 0.0590181 
+
+d 1
+
+Ns 0
+
+map_Ka TheRiflemanOfBennington1_diff.png
+map_Kd TheRiflemanOfBennington1_diff.png
+map_d TheRiflemanOfBennington1_diff.png
+
+newmtl Base1Mtl
+Material Color
+Ka 0.373615 0.368591 0.383775
+Kd 0.373615 0.368591 0.383775
+Ks 0.0322335 0.0318 0.03311 
+
+d 1
+
+Ns 255
+
+map_Ka Base1_diff.png
+map_Kd Base1_diff.png
+map_d Base1_diff.png
+
+map_Bump Base1_nmap.png
+
+map_Ns Base1_spec.png
+
+rbx_alphamode overlay
+
+newmtl Shell1Mtl
+Material Color
+Ka 0.212044 0.139022 0.0461488
+Kd 0.212044 0.139022 0.0461488
+Ks 0.141363 0.0926816 0.0307659 
+
+d 1
+
+Ns 255
+
+map_Ka Shell1_diff.png
+map_Kd Shell1_diff.png
+map_d Shell1_diff.png
+
+map_Bump Shell1_nmap.png
+
+map_Ns Shell1_spec.png
+
+newmtl Acog1Mtl
+Material Color
+Ka 0.0103978 0.0103978 0.00902149
+Kd 0.0103978 0.0103978 0.00902149
+Ks 0.00411835 0.00411835 0.00357322 
+
+d 1
+
+Ns 0
+
+map_Ka Lens1_diff.png
+map_Kd Lens1_diff.png
+map_d Lens1_diff.png
+
+map_Bump Lens1_nmap.png
+
+rbx_doublesided 1
+
+newmtl Stock1Mtl
+Material Color
+Ka 0.373615 0.368591 0.383775
+Kd 0.373615 0.368591 0.383775
+Ks 0.0322335 0.0318 0.03311 
+
+d 1
+
+Ns 255
+
+map_Ka Stock1_diff.png
+map_Kd Stock1_diff.png
+map_d Stock1_diff.png
+
+map_Bump Stock1_nmap.png
+
+map_Ns Stock1_spec.png
+
+rbx_alphamode overlay
+
+newmtl Handle1Mtl
+Material Color
+Ka 0.373615 0.368591 0.383775
+Kd 0.373615 0.368591 0.383775
+Ks 0.0234425 0.0231273 0.02408 
+
+d 1
+
+Ns 0
+
+map_Ka Handle1_diff.png
+map_Kd Handle1_diff.png
+map_d Handle1_diff.png
+
+newmtl Slide1Mtl
+Material Color
+Ka 0.0277553 0.0169881 0.0169881
+Kd 0.0277553 0.0169881 0.0169881
+Ks 0.0185035 0.0113254 0.0113254 
+
+d 1
+
+Ns 255
+
+map_Ka Slide1_diff.png
+map_Kd Slide1_diff.png
+map_d Slide1_diff.png
+
+newmtl Glow1Mtl
+Material Color
+Ka 1 0 0
+Kd 1 0 0
+Ks 0.396078 0 0 
+
+d 1
+
+Ns 0
+
+map_Ka Lens1_diff.png
+map_Kd Lens1_diff.png
+map_d Lens1_diff.png
+
+map_Bump Lens1_nmap.png
+
+newmtl Bullets1Mtl
+Material Color
+Ka 0.373615 0.368591 0.383775
+Kd 0.373615 0.368591 0.383775
+Ks 0.0322335 0.0318 0.03311 
+
+d 1
+
+Ns 255
+
+map_Ka Bullets1_diff.png
+map_Kd Bullets1_diff.png
+map_d Bullets1_diff.png
+
+map_Bump Bullets1_nmap.png
+
+map_Ns Bullets1_spec.png
+
+rbx_alphamode overlay
+
+newmtl Acog2Mtl
+Material Color
+Ka 1 1 1
+Kd 1 1 1
+Ks 0.396078 0.396078 0.396078 
+
+d 0.352941
+
+Ns 0
+
+map_Ka Acog2_diff.png
+map_Kd Acog2_diff.png
+map_d Acog2_diff.png
+
+rbx_doublesided 1
+
+newmtl Acog8Mtl
+Material Color
+Ka 0.447871 0.358654 0.22331
+Kd 0.447871 0.358654 0.22331
+Ks 0.177392 0.142055 0.0884484 
+
+d 1
+
+Ns 0
+
+map_Ka Acog8_diff.png
+map_Kd Acog8_diff.png
+map_d Acog8_diff.png
+
+rbx_doublesided 1
+
+newmtl Mag1Mtl
+Material Color
+Ka 0.373615 0.368591 0.383775
+Kd 0.373615 0.368591 0.383775
+Ks 0.0336986 0.0332455 0.034615 
+
+d 1
+
+Ns 0
+
+map_Ka Mag1_diff.png
+map_Kd Mag1_diff.png
+map_d Mag1_diff.png
+
+newmtl TheRiflemanOfBennington4Mtl
+Material Color
+Ka 0.827726 0.487765 0.293216
+Kd 0.827726 0.487765 0.293216
+Ks 0.0519357 0.0306049 0.0183979 
+
+d 1
+
+Ns 0
+
+map_Ka TheRiflemanOfBennington1_diff.png
+map_Kd TheRiflemanOfBennington1_diff.png
+map_d TheRiflemanOfBennington1_diff.png
+

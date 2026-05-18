@@ -1,0 +1,503 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --background: oklch(0.13 0.02 240);
+  --foreground: oklch(0.7 0.14 250);
+  --card: oklch(0.16 0.02 240);
+  --card-foreground: oklch(0.7 0.14 250);
+  --popover: oklch(0.16 0.02 240);
+  --popover-foreground: oklch(0.7 0.14 250);
+  --primary: oklch(0.65 0.18 250);
+  --primary-foreground: oklch(0.98 0.01 240);
+  --secondary: oklch(0.22 0.02 240);
+  --secondary-foreground: oklch(0.7 0.14 250);
+  --muted: oklch(0.22 0.02 240);
+  --muted-foreground: oklch(0.55 0.1 250);
+  --accent: oklch(0.65 0.18 250);
+  --accent-foreground: oklch(0.98 0.01 240);
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(0.577 0.245 27.325);
+  --border: oklch(0.28 0.02 240);
+  --input: oklch(0.22 0.02 240);
+  --ring: oklch(0.65 0.18 250);
+  --chart-1: oklch(0.646 0.222 41.116);
+  --chart-2: oklch(0.6 0.118 184.704);
+  --chart-3: oklch(0.398 0.07 227.392);
+  --chart-4: oklch(0.828 0.189 84.429);
+  --chart-5: oklch(0.769 0.188 70.08);
+  --radius: 0.625rem;
+  --sidebar: oklch(0.16 0.02 240);
+  --sidebar-foreground: oklch(0.7 0.14 250);
+  --sidebar-primary: oklch(0.65 0.18 250);
+  --sidebar-primary-foreground: oklch(0.98 0.01 240);
+  --sidebar-accent: oklch(0.22 0.02 240);
+  --sidebar-accent-foreground: oklch(0.7 0.14 250);
+  --sidebar-border: oklch(0.28 0.02 240);
+  --sidebar-ring: oklch(0.65 0.18 250);
+}
+
+.dark {
+  --background: oklch(0.13 0.02 240);
+  --foreground: oklch(0.7 0.14 250);
+  --card: oklch(0.16 0.02 240);
+  --card-foreground: oklch(0.7 0.14 250);
+  --popover: oklch(0.16 0.02 240);
+  --popover-foreground: oklch(0.7 0.14 250);
+  --primary: oklch(0.65 0.18 250);
+  --primary-foreground: oklch(0.98 0.01 240);
+  --secondary: oklch(0.22 0.02 240);
+  --secondary-foreground: oklch(0.7 0.14 250);
+  --muted: oklch(0.22 0.02 240);
+  --muted-foreground: oklch(0.55 0.1 250);
+  --accent: oklch(0.65 0.18 250);
+  --accent-foreground: oklch(0.98 0.01 240);
+  --destructive: oklch(0.396 0.141 25.723);
+  --destructive-foreground: oklch(0.637 0.237 25.331);
+  --border: oklch(0.28 0.02 240);
+  --input: oklch(0.22 0.02 240);
+  --ring: oklch(0.65 0.18 250);
+  --chart-1: oklch(0.488 0.243 264.376);
+  --chart-2: oklch(0.696 0.17 162.48);
+  --chart-3: oklch(0.769 0.188 70.08);
+  --chart-4: oklch(0.627 0.265 303.9);
+  --chart-5: oklch(0.645 0.246 16.439);
+  --sidebar: oklch(0.16 0.02 240);
+  --sidebar-foreground: oklch(0.7 0.14 250);
+  --sidebar-primary: oklch(0.65 0.18 250);
+  --sidebar-primary-foreground: oklch(0.98 0.01 240);
+  --sidebar-accent: oklch(0.22 0.02 240);
+  --sidebar-accent-foreground: oklch(0.7 0.14 250);
+  --sidebar-border: oklch(0.28 0.02 240);
+  --sidebar-ring: oklch(0.65 0.18 250);
+}
+
+@theme inline {
+  --font-sans: 'Geist', 'Geist Fallback';
+  --font-mono: 'Geist Mono', 'Geist Mono Fallback';
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .scroll-reveal {
+    opacity: 0;
+    transform: translateY(28px) scale(0.97);
+    transition:
+      opacity 950ms ease,
+      transform 950ms cubic-bezier(0.22, 1, 0.36, 1);
+    will-change: opacity, transform;
+  }
+
+  .scroll-reveal-visible {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+
+  .letter-reveal-char {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(0.75em) scale(0.84);
+    transition:
+      opacity 520ms ease,
+      transform 720ms cubic-bezier(0.22, 1, 0.36, 1);
+    will-change: opacity, transform;
+  }
+
+  .letter-reveal-char-visible {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+
+  .roblox-model-stage {
+    position: relative;
+    width: min(300px, 72vw);
+    min-width: 260px;
+    min-height: 260px;
+    aspect-ratio: 1;
+    margin: 2rem auto;
+  }
+
+  .roblox-model-canvas {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+  }
+
+  .roblox-model-canvas canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  .roblox-model-status {
+    position: absolute;
+    left: 50%;
+    bottom: 1rem;
+    z-index: 2;
+    transform: translateX(-50%);
+    color: var(--muted-foreground);
+    font-size: 0.75rem;
+    white-space: nowrap;
+  }
+
+  .roblox-model-error::after {
+    content: "Model could not load";
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    color: var(--muted-foreground);
+    font-size: 0.875rem;
+  }
+
+  .roblox-model-shadow {
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    width: 110px;
+    height: 20px;
+    border-radius: 999px;
+    background: rgba(20, 60, 120, 0.24);
+    filter: blur(12px);
+    transform: translateX(-50%);
+  }
+
+  .avatar-stage {
+    position: relative;
+    width: min(220px, 58vw);
+    aspect-ratio: 1;
+    margin: 2.5rem auto;
+    perspective: 760px;
+  }
+
+  .avatar-model {
+    position: absolute;
+    inset: 0;
+    transform-style: preserve-3d;
+    animation: avatar-float 4.8s ease-in-out infinite;
+  }
+
+  .avatar-part {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform-style: preserve-3d;
+  }
+
+  .avatar-face {
+    position: absolute;
+    inset: 0;
+    border: 1px solid rgba(110, 180, 235, 0.22);
+    background: rgb(86, 155, 220);
+    backface-visibility: hidden;
+  }
+
+  .avatar-head {
+    width: 72px;
+    height: 72px;
+    transform: translate3d(-50%, -124px, 42px);
+  }
+
+  .avatar-torso {
+    width: 84px;
+    height: 90px;
+    transform: translate3d(-50%, -44px, 36px);
+  }
+
+  .avatar-arm {
+    width: 34px;
+    height: 88px;
+  }
+
+  .avatar-arm-left {
+    transform: translate3d(-98px, -40px, 34px) rotateZ(8deg);
+    animation: avatar-arm-left 4.8s ease-in-out infinite;
+  }
+
+  .avatar-arm-right {
+    transform: translate3d(64px, -40px, 34px) rotateZ(-8deg);
+    animation: avatar-arm-right 4.8s ease-in-out infinite;
+  }
+
+  .avatar-leg {
+    width: 36px;
+    height: 86px;
+  }
+
+  .avatar-leg-left {
+    transform: translate3d(-44px, 46px, 34px);
+  }
+
+  .avatar-leg-right {
+    transform: translate3d(8px, 46px, 34px);
+  }
+
+  .avatar-face-front {
+    transform: translateZ(36px);
+  }
+
+  .avatar-face-back {
+    transform: rotateY(180deg) translateZ(36px);
+    filter: brightness(0.72);
+  }
+
+  .avatar-face-left {
+    transform: rotateY(-90deg) translateZ(36px);
+    filter: brightness(0.78);
+  }
+
+  .avatar-face-right {
+    transform: rotateY(90deg) translateZ(36px);
+    filter: brightness(0.86);
+  }
+
+  .avatar-face-top {
+    transform: rotateX(90deg) translateZ(36px);
+    filter: brightness(1.12);
+  }
+
+  .avatar-face-bottom {
+    transform: rotateX(-90deg) translateZ(36px);
+    filter: brightness(0.65);
+  }
+
+  .avatar-torso .avatar-face-front,
+  .avatar-torso .avatar-face-back,
+  .avatar-torso .avatar-face-left,
+  .avatar-torso .avatar-face-right {
+    transform-origin: center;
+  }
+
+  .avatar-torso .avatar-face-front,
+  .avatar-torso .avatar-face-back {
+    transform: translateZ(30px);
+  }
+
+  .avatar-torso .avatar-face-back {
+    transform: rotateY(180deg) translateZ(30px);
+  }
+
+  .avatar-torso .avatar-face-left {
+    transform: rotateY(-90deg) translateZ(42px);
+  }
+
+  .avatar-torso .avatar-face-right {
+    transform: rotateY(90deg) translateZ(42px);
+  }
+
+  .avatar-torso .avatar-face-top {
+    transform: rotateX(90deg) translateZ(30px);
+  }
+
+  .avatar-torso .avatar-face-bottom {
+    transform: rotateX(-90deg) translateZ(60px);
+  }
+
+  .avatar-arm .avatar-face-front,
+  .avatar-arm .avatar-face-back,
+  .avatar-leg .avatar-face-front,
+  .avatar-leg .avatar-face-back {
+    transform: translateZ(17px);
+  }
+
+  .avatar-arm .avatar-face-back,
+  .avatar-leg .avatar-face-back {
+    transform: rotateY(180deg) translateZ(17px);
+  }
+
+  .avatar-arm .avatar-face-left,
+  .avatar-leg .avatar-face-left {
+    transform: rotateY(-90deg) translateZ(17px);
+  }
+
+  .avatar-arm .avatar-face-right,
+  .avatar-leg .avatar-face-right {
+    transform: rotateY(90deg) translateZ(17px);
+  }
+
+  .avatar-arm .avatar-face-top,
+  .avatar-leg .avatar-face-top {
+    transform: rotateX(90deg) translateZ(17px);
+  }
+
+  .avatar-arm .avatar-face-bottom,
+  .avatar-leg .avatar-face-bottom {
+    transform: rotateX(-90deg) translateZ(70px);
+  }
+
+  .avatar-shirt {
+    background: linear-gradient(145deg, rgb(50, 125, 205), rgb(23, 70, 140));
+  }
+
+  .avatar-shirt-side,
+  .avatar-shirt-top {
+    background: rgb(28, 87, 164);
+  }
+
+  .avatar-skin {
+    background: rgb(88, 158, 220);
+  }
+
+  .avatar-skin-side {
+    background: rgb(58, 120, 190);
+  }
+
+  .avatar-skin-light {
+    background: rgb(118, 184, 235);
+  }
+
+  .avatar-pants {
+    background: rgb(22, 52, 102);
+  }
+
+  .avatar-pants-side,
+  .avatar-pants-top {
+    background: rgb(18, 42, 82);
+  }
+
+  .avatar-eye,
+  .avatar-smile {
+    position: absolute;
+    display: block;
+    background: rgb(8, 22, 48);
+  }
+
+  .avatar-eye {
+    top: 27px;
+    width: 7px;
+    height: 7px;
+    border-radius: 999px;
+  }
+
+  .avatar-eye-left {
+    left: 20px;
+  }
+
+  .avatar-eye-right {
+    right: 20px;
+  }
+
+  .avatar-smile {
+    left: 26px;
+    top: 44px;
+    width: 20px;
+    height: 3px;
+    border-radius: 999px;
+  }
+
+  .avatar-shadow {
+    position: absolute;
+    left: 50%;
+    bottom: 12px;
+    width: 112px;
+    height: 22px;
+    border-radius: 999px;
+    background: rgba(20, 60, 120, 0.22);
+    filter: blur(10px);
+    transform: translateX(-50%);
+    animation: avatar-shadow 4.8s ease-in-out infinite;
+  }
+
+  @keyframes avatar-float {
+    0%,
+    100% {
+      transform: translateY(0) rotateX(-10deg) rotateY(-24deg);
+    }
+    50% {
+      transform: translateY(-14px) rotateX(-7deg) rotateY(24deg);
+    }
+  }
+
+  @keyframes avatar-shadow {
+    0%,
+    100% {
+      opacity: 0.56;
+      transform: translateX(-50%) scale(1);
+    }
+    50% {
+      opacity: 0.32;
+      transform: translateX(-50%) scale(0.82);
+    }
+  }
+
+  @keyframes avatar-arm-left {
+    0%,
+    100% {
+      transform: translate3d(-98px, -40px, 34px) rotateZ(8deg);
+    }
+    50% {
+      transform: translate3d(-98px, -44px, 34px) rotateZ(-7deg);
+    }
+  }
+
+  @keyframes avatar-arm-right {
+    0%,
+    100% {
+      transform: translate3d(64px, -40px, 34px) rotateZ(-8deg);
+    }
+    50% {
+      transform: translate3d(64px, -44px, 34px) rotateZ(7deg);
+    }
+  }
+
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .scroll-reveal,
+  .letter-reveal-char,
+  .avatar-model,
+  .avatar-shadow,
+  .avatar-arm-left,
+  .avatar-arm-right {
+    opacity: 1;
+    transform: none;
+    transition: none;
+    animation: none;
+  }
+}

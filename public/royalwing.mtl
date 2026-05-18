@@ -1,0 +1,226 @@
+# Blender MTL File: 'None'
+# Material Count: 18
+
+newmtl Acog1Mtl
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.010398 0.010398 0.009021
+Ks 0.003937 0.003937 0.003937
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Bump Lens1_nmap.png
+map_Kd Lens1_diff.png
+map_d Lens1_diff.png
+
+newmtl Acog2Mtl
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.396078 0.396078 0.396078
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 0.352941
+illum 9
+map_Kd Acog2_diff.png
+map_d Acog2_diff.png
+
+newmtl Acog8Mtl
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.447871 0.358654 0.223310
+Ks 0.135965 0.135965 0.135965
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd Acog8_diff.png
+map_d Acog8_diff.png
+
+newmtl Base1Mtl
+Ns 255.000013
+Ka 1.000000 1.000000 1.000000
+Kd 0.373615 0.368591 0.383775
+Ks 0.032381 0.032381 0.032381
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Bump Base1_nmap.png
+map_Kd Base1_diff.png
+map_d Base1_diff.png
+
+newmtl Bullets1Mtl
+Ns 255.000013
+Ka 1.000000 1.000000 1.000000
+Kd 0.373615 0.368591 0.383775
+Ks 0.032381 0.032381 0.032381
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Bump Bullets1_nmap.png
+map_Kd Bullets1_diff.png
+map_d Bullets1_diff.png
+
+newmtl Glow1Mtl
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 0.000000 0.000000
+Ks 0.132026 0.132026 0.132026
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Bump Lens1_nmap.png
+map_Kd Lens1_diff.png
+map_d Lens1_diff.png
+
+newmtl Handle1Mtl
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.373615 0.368591 0.383775
+Ks 0.023550 0.023550 0.023550
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd Handle1_diff.png
+map_d Handle1_diff.png
+
+newmtl Lens1Mtl
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.219520 0.505432 0.715465
+Ks 0.190173 0.190173 0.190173
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 0.200000
+illum 9
+map_Bump Lens1_nmap.png
+map_Kd Lens1_diff.png
+map_d Lens1_diff.png
+
+newmtl Mag1Mtl
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.373615 0.368591 0.383775
+Ks 0.033853 0.033853 0.033853
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd Mag1_diff.png
+map_d Mag1_diff.png
+
+newmtl Railcover11Mtl
+Ns 255.000013
+Ka 1.000000 1.000000 1.000000
+Kd 0.373615 0.368591 0.383775
+Ks 0.032381 0.032381 0.032381
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Bump Railcover11_nmap.png
+map_Kd Railcover11_diff.png
+map_d Railcover11_diff.png
+
+newmtl Rearironmain1Mtl
+Ns 255.000013
+Ka 1.000000 1.000000 1.000000
+Kd 0.373615 0.368591 0.383775
+Ks 0.032381 0.032381 0.032381
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Bump Rearironmain1_nmap.png
+map_Kd Rearironmain1_diff.png
+map_d Rearironmain1_diff.png
+
+newmtl Shell1Mtl
+Ns 255.000013
+Ka 1.000000 1.000000 1.000000
+Kd 0.212044 0.139022 0.046149
+Ks 0.088270 0.088270 0.088270
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Bump Shell1_nmap.png
+map_Kd Shell1_diff.png
+map_d Shell1_diff.png
+
+newmtl Slide1Mtl
+Ns 255.000013
+Ka 1.000000 1.000000 1.000000
+Kd 0.027755 0.016988 0.016988
+Ks 0.013718 0.013718 0.013718
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd Slide1_diff.png
+map_d Slide1_diff.png
+
+newmtl Stock1Mtl
+Ns 255.000013
+Ka 1.000000 1.000000 1.000000
+Kd 0.373615 0.368591 0.383775
+Ks 0.032381 0.032381 0.032381
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Bump Stock1_nmap.png
+map_Kd Stock1_diff.png
+map_d Stock1_diff.png
+
+newmtl TheRiflemanOfBennington1Mtl
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.940601 0.940601 0.940601
+Ks 0.059018 0.059018 0.059018
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd TheRiflemanOfBennington1_diff.png
+map_d TheRiflemanOfBennington1_diff.png
+
+newmtl TheRiflemanOfBennington4Mtl
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.827726 0.487765 0.293216
+Ks 0.033646 0.033646 0.033646
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd TheRiflemanOfBennington1_diff.png
+map_d TheRiflemanOfBennington1_diff.png
+
+newmtl Translucent1Mtl
+Ns 255.000013
+Ka 1.000000 1.000000 1.000000
+Kd 0.373615 0.368591 0.383775
+Ks 0.032381 0.032381 0.032381
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 0.400000
+illum 9
+map_Bump Base1_nmap.png
+map_Kd Base1_diff.png
+map_d Base1_diff.png
+
+newmtl View1Mtl
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.000000 0.000000 0.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
